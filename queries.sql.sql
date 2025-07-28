@@ -1,4 +1,4 @@
-SELECT * FROM freelancers;
+-- Inserting new project
 
 INSERT INTO projects(client_id, title, category, budget, post_date)
 	VALUES(1, 'Clean data', 'Data Analysis', 250, '2025-07-15');
