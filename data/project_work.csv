@@ -1,0 +1,4 @@
+"work_id","project_id","freelancer_id","start_date","end_date","status"
+1,1,1,"2025-07-07","2025-07-09","Completed"
+2,2,2,"2025-07-07","2025-07-09","Completed"
+3,3,3,"2025-07-09",NULL,"Progress"
