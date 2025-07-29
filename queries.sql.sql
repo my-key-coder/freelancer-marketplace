@@ -93,5 +93,31 @@ GROUP BY
 	pr.category
 ORDER BY
 	avg_days_to_complete;
+
+
+-- Top clients by total spend
+SELECT 
+	c.name AS client_name,
+	SUM(p.amount) AS total_spenT
+FROM clients c
+JOIN
+	projects pr
+ON c.client_id = pr.client_id
+JOIN
+	project_work w
+ON  pr.project_id = w.project_id
+JOIN
+	payments p
+ON	w.work_id = p.work_id
+GROUP BY
+	c.name
+ORDER BY
+	total_spent DESC;
+
+
+	
+	
+
+
 	
 	
